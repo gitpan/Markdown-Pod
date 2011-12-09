@@ -1,0 +1,17 @@
+Changes
+DZP-git.uNmn
+INSTALL
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+README.mkdn
+bin/markdown2pod
+dist.ini
+lib/Markdown/Pod.pm
+lib/Markdown/Pod/Handler.pm
+lib/Markdown/Pod/script.pm
+t/release-pod-coverage.t
+t/release-pod-syntax.t
+weaver.ini
