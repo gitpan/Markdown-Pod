@@ -4,7 +4,7 @@ Markdown::Pod - Convert Markdown to POD
 
 # VERSION
 
-version 0.001
+version 0.002
 
 # SYNOPSIS
 
@@ -40,7 +40,7 @@ encoding to use. Available type of encoding is same as [Encode](http://search.cp
 
 create Markdown::Pod object
 
-## markdown_to_pod
+## markdown\_to\_pod
 
 convert markdown text to POD text
 
@@ -56,7 +56,7 @@ Keedi Kim - 김도형 <keedi@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Keedi Kim.
+This software is copyright (c) 2012 by Keedi Kim.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

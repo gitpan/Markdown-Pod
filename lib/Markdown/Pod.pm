@@ -1,6 +1,6 @@
 package Markdown::Pod;
 {
-  $Markdown::Pod::VERSION = '0.001';
+  $Markdown::Pod::VERSION = '0.002';
 }
 # ABSTRACT: Convert Markdown to POD
 
@@ -89,7 +89,7 @@ Markdown::Pod - Convert Markdown to POD
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -152,7 +152,7 @@ Keedi Kim - 김도형 <keedi@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Keedi Kim.
+This software is copyright (c) 2012 by Keedi Kim.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

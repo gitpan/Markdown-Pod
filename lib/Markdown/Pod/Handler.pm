@@ -1,6 +1,6 @@
 package Markdown::Pod::Handler;
 {
-  $Markdown::Pod::Handler::VERSION = '0.001';
+  $Markdown::Pod::Handler::VERSION = '0.002';
 }
 # ABSTRACT: Parser module to convert from markdown to POD
 
@@ -119,10 +119,22 @@ sub end_link {
     $link_buf = undef;
 }
 
-sub start_emphasis {
+sub start_strong {
     my $self = shift;
 
     $self->_stream('B<');
+}
+
+sub end_strong {
+    my $self = shift;
+
+    $self->_stream('>');
+}
+
+sub start_emphasis {
+    my $self = shift;
+
+    $self->_stream('I<');
 }
 
 sub end_emphasis {
@@ -245,7 +257,6 @@ sub end_html_tag {
     my ( $tag, $attributes ) = validated_list(
         \@_,
         tag        => { isa => Str },
-        attributes => { isa => HashRef },
     );
 }
 
@@ -282,7 +293,7 @@ Markdown::Pod::Handler - Parser module to convert from markdown to POD
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -321,6 +332,10 @@ create Markdown::Pod::Handler object
 
 convert markdown text to POD text
 
+=head1 CONTRIBUTORS
+
+Abigail (ABIGAIL)
+
 =head1 SEE ALSO
 
 =over
@@ -345,7 +360,7 @@ Keedi Kim - 김도형 <keedi@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Keedi Kim.
+This software is copyright (c) 2012 by Keedi Kim.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
