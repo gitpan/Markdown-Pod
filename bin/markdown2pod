@@ -23,7 +23,7 @@ markdown2pod - markdown2pod - convert Markdown text to Pod
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -41,6 +41,10 @@ then check L<Markdown::Pod> module.
 =head1 AUTHOR
 
 Keedi Kim - 김도형 <keedi@cpan.org>
+
+=head1 CONTRIBUTOR
+
+Abigail (ABIGAIL)
 
 =head1 COPYRIGHT AND LICENSE
 

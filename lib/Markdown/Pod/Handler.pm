@@ -1,6 +1,6 @@
 package Markdown::Pod::Handler;
 {
-  $Markdown::Pod::Handler::VERSION = '0.002';
+  $Markdown::Pod::Handler::VERSION = '0.003';
 }
 # ABSTRACT: Parser module to convert from markdown to POD
 
@@ -165,41 +165,41 @@ sub end_blockquote {
 }
 
 sub start_unordered_list {
-    my $self  = shift;
+    my $self = shift;
 
-    push @list_type, '*';
     $self->_stream("=over\n\n");
 }
 
 sub end_unordered_list {
-    my $self  = shift;
+    my $self = shift;
 
-    my $type = pop @list_type;
     $self->_stream("=back\n\n");
 }
 
 sub start_ordered_list {
-    my $self  = shift;
+    my $self = shift;
 
-    push @list_type, '1.';
     $self->_stream("=over\n\n");
 }
 
 sub end_ordered_list {
-    my $self  = shift;
+    my $self = shift;
 
-    my $type = pop @list_type;
     $self->_stream("=back\n\n");
 }
 
 sub start_list_item {
-    my $self  = shift;
+    my $self = shift;
+    my %p    = validated_hash(
+        \@_,
+        bullet => { isa => Str },
+    );
 
-    $self->_stream("=item $list_type[-1]\n\n");
+    $self->_stream("=item $p{bullet}\n\n");
 }
 
 sub end_list_item {
-    my $self  = shift;
+    my $self = shift;
 
     $self->_stream("\n\n");
 }
@@ -278,6 +278,30 @@ sub html_tag {
     }
 }
 
+sub html_block {
+    my $self = shift;
+    my ($html) = validated_list( \@_, html => { isa => Str }, );
+
+    chomp $html;
+    $self->_output()->print(
+            <<"END_HTML"
+
+=begin html
+
+$html
+
+=end html
+
+END_HTML
+    );
+}
+
+sub line_break {
+    my $self = shift;
+    $self->_stream( "\n\n" );
+}
+
+
 __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
@@ -293,7 +317,7 @@ Markdown::Pod::Handler - Parser module to convert from markdown to POD
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -332,10 +356,6 @@ create Markdown::Pod::Handler object
 
 convert markdown text to POD text
 
-=head1 CONTRIBUTORS
-
-Abigail (ABIGAIL)
-
 =head1 SEE ALSO
 
 =over
@@ -357,6 +377,10 @@ L<Text::MultiMarkdown>, L<Text::Markdown>
 =head1 AUTHOR
 
 Keedi Kim - 김도형 <keedi@cpan.org>
+
+=head1 CONTRIBUTOR
+
+Abigail (ABIGAIL)
 
 =head1 COPYRIGHT AND LICENSE
 

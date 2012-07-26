@@ -1,6 +1,6 @@
 package Markdown::Pod::script;
 {
-  $Markdown::Pod::script::VERSION = '0.002';
+  $Markdown::Pod::script::VERSION = '0.003';
 }
 # ABSTRACT: script to convert Markdown to POD
 
@@ -136,7 +136,7 @@ Markdown::Pod::script - script to convert Markdown to POD
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -151,6 +151,10 @@ This module contains script related functions.
 =head1 AUTHOR
 
 Keedi Kim - 김도형 <keedi@cpan.org>
+
+=head1 CONTRIBUTOR
+
+Abigail (ABIGAIL)
 
 =head1 COPYRIGHT AND LICENSE
 

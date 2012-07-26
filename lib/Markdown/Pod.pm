@@ -1,6 +1,6 @@
 package Markdown::Pod;
 {
-  $Markdown::Pod::VERSION = '0.002';
+  $Markdown::Pod::VERSION = '0.003';
 }
 # ABSTRACT: Convert Markdown to POD
 
@@ -89,7 +89,7 @@ Markdown::Pod - Convert Markdown to POD
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -149,6 +149,10 @@ L<Text::MultiMarkdown>, L<Text::Markdown>
 =head1 AUTHOR
 
 Keedi Kim - 김도형 <keedi@cpan.org>
+
+=head1 CONTRIBUTOR
+
+Abigail (ABIGAIL)
 
 =head1 COPYRIGHT AND LICENSE
 
