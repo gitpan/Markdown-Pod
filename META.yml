@@ -7,14 +7,13 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300020, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.132830'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Markdown-Pod
 requires:
-  Encode: 0
   File::Slurp: 0
   Getopt::Long: 0
   List::Util: 0
@@ -26,9 +25,8 @@ requires:
   MooseX::SemiAffordanceAccessor: 0
   MooseX::StrictConstructor: 0
   namespace::autoclean: 0
-  strict: 0
-  warnings: 0
 resources:
-  bugtracker: https://rt.cpan.org/Dist/Display.html?Name=Markdown-Pod
-  repository: http://github.com/keedi/Markdown-Pod.git
-version: 0.003
+  bugtracker: https://github.com/keedi/Markdown-Pod/issues
+  homepage: https://github.com/keedi/Markdown-Pod
+  repository: https://github.com/keedi/Markdown-Pod.git
+version: 0.004

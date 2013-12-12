@@ -1,12 +1,12 @@
 Changes
-INSTALL
 LICENSE
 MANIFEST
+META.json
 META.yml
 Makefile.PL
 README
-README.mkdn
 bin/markdown2pod
+cpanfile
 dist.ini
 lib/Markdown/Pod.pm
 lib/Markdown/Pod/Handler.pm
@@ -37,6 +37,7 @@ t/2011-12-21.mkd.t
 t/2011-12-22.mkd.t
 t/2011-12-23.mkd.t
 t/2011-12-24.mkd.t
+t/github-2-html-entities.mkd.t
 t/mkd/001-line-break.mkd
 t/mkd/2011-12-01.mkd
 t/mkd/2011-12-02.mkd
@@ -62,10 +63,11 @@ t/mkd/2011-12-21.mkd
 t/mkd/2011-12-22.mkd
 t/mkd/2011-12-23.mkd
 t/mkd/2011-12-24.mkd
+t/mkd/github-2-html-entities.mkd
 t/mkd/rt-77887-embed-html.mkd
 t/mkd/rt-77889-ordered-list.mkd
 t/release-pod-coverage.t
 t/release-pod-syntax.t
 t/rt-77887-embed-html.mkd.t
 t/rt-77889-ordered-list.mkd.t
-weaver.ini
+x.pl
