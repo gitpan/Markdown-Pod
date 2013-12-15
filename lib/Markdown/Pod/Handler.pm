@@ -1,6 +1,6 @@
 package Markdown::Pod::Handler;
 {
-  $Markdown::Pod::Handler::VERSION = '0.004';
+  $Markdown::Pod::Handler::VERSION = '0.005';
 }
 # ABSTRACT: Parser module to convert from markdown to POD
 
@@ -325,7 +325,7 @@ Markdown::Pod::Handler - Parser module to convert from markdown to POD
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

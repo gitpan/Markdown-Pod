@@ -3,6 +3,7 @@ abstract: 'Convert Markdown to POD'
 author:
   - 'Keedi Kim - 김도형 <keedi@cpan.org>'
 build_requires:
+  Exporter: 5.57
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
@@ -14,12 +15,9 @@ meta-spec:
   version: 1.4
 name: Markdown-Pod
 requires:
-  File::Slurp: 0
   Getopt::Long: 0
   List::Util: 0
-  Markdent::Parser: 0
-  Markdent::Role::EventsAsMethods: 0
-  Markdent::Types: 0
+  Markdent: 0.23
   Moose: 0
   MooseX::Params::Validate: 0
   MooseX::SemiAffordanceAccessor: 0
@@ -29,4 +27,4 @@ resources:
   bugtracker: https://github.com/keedi/Markdown-Pod/issues
   homepage: https://github.com/keedi/Markdown-Pod
   repository: https://github.com/keedi/Markdown-Pod.git
-version: 0.004
+version: 0.005

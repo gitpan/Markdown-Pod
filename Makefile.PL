@@ -22,12 +22,9 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Markdown::Pod",
   "PREREQ_PM" => {
-    "File::Slurp" => 0,
     "Getopt::Long" => 0,
     "List::Util" => 0,
-    "Markdent::Parser" => 0,
-    "Markdent::Role::EventsAsMethods" => 0,
-    "Markdent::Types" => 0,
+    "Markdent" => "0.23",
     "Moose" => 0,
     "MooseX::Params::Validate" => 0,
     "MooseX::SemiAffordanceAccessor" => 0,
@@ -35,9 +32,10 @@ my %WriteMakefileArgs = (
     "namespace::autoclean" => 0
   },
   "TEST_REQUIRES" => {
+    "Exporter" => "5.57",
     "Test::More" => 0
   },
-  "VERSION" => "0.004",
+  "VERSION" => "0.005",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -45,12 +43,10 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "File::Slurp" => 0,
+  "Exporter" => "5.57",
   "Getopt::Long" => 0,
   "List::Util" => 0,
-  "Markdent::Parser" => 0,
-  "Markdent::Role::EventsAsMethods" => 0,
-  "Markdent::Types" => 0,
+  "Markdent" => "0.23",
   "Moose" => 0,
   "MooseX::Params::Validate" => 0,
   "MooseX::SemiAffordanceAccessor" => 0,

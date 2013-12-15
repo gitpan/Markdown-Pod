@@ -1,6 +1,6 @@
 package Markdown::Pod;
 {
-  $Markdown::Pod::VERSION = '0.004';
+  $Markdown::Pod::VERSION = '0.005';
 }
 # ABSTRACT: Convert Markdown to POD
 
@@ -90,7 +90,7 @@ Markdown::Pod - Convert Markdown to POD
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

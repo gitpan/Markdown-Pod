@@ -1,9 +1,6 @@
-requires "File::Slurp" => "0";
 requires "Getopt::Long" => "0";
 requires "List::Util" => "0";
-requires "Markdent::Parser" => "0";
-requires "Markdent::Role::EventsAsMethods" => "0";
-requires "Markdent::Types" => "0";
+requires "Markdent" => "0.23";
 requires "Moose" => "0";
 requires "MooseX::Params::Validate" => "0";
 requires "MooseX::SemiAffordanceAccessor" => "0";
@@ -11,6 +8,7 @@ requires "MooseX::StrictConstructor" => "0";
 requires "namespace::autoclean" => "0";
 
 on 'test' => sub {
+  requires "Exporter" => "5.57";
   requires "Test::More" => "0";
 };
 
